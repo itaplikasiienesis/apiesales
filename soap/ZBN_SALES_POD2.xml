@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:rfc:functions">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:ZIFSD_POST_VLPOD2>
+            ?
+         <PODAT>tgl_pod_distributor</PODAT>
+         <RETURN>
+         </RETURN>
+         <VBELN>nomor_do</VBELN>
+      </urn:ZIFSD_POST_VLPOD2>
+   </soapenv:Body>
+</soapenv:Envelope>

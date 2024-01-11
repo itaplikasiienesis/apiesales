@@ -1,0 +1,15 @@
+module.exports.route = {
+    // "POST/pushdiskon" : "transactions/CMOApproveContoller.new",
+    "POST /pushdiskon" : "transactions/Diskonb2bController.new",
+    "POST /diskonb2b/find" : "transactions/Diskonb2bController.find",
+    "GET /diskonb2b/findApproveCeo" : "transactions/Diskonb2bController.findApproveCeo",
+    "GET /diskonb2b/countB2bApprove" : "transactions/Diskonb2bController.countB2bApprove",
+    "GET /diskonb2b/view" : "transactions/Diskonb2bController.view",
+    "GET /diskonb2b/export" : "transactions/Diskonb2bController.exportexcel",
+    "POST /diskonb2b/action" : "transactions/Diskonb2bController.actionb2b",
+    "POST /diskonb2b/test" : "transactions/Diskonb2bController.testupload",
+    // "GET /diskonb2b/getfile/:record/:filename": "transactions/Diskonb2bController.getfile",
+    "GET /diskonb2b/getfile" : "transactions/Diskonb2bController.getfile",
+    "GET /diskonb2b/approved" : "transactions/Diskonb2bController.approved",
+    "GET /diskonb2b/approvedemail" : "transactions/Diskonb2bController.approvedemail",
+};

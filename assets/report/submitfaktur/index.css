@@ -1,0 +1,107 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+
+  font-family: "Tahoma";
+}
+
+.form-report {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px;
+}
+
+.main_title_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 50px 0px 30px;
+}
+
+.main_head {
+  text-align: center;
+  font-weight: bold;
+}
+  
+.main_head h3{
+  text-align: center;
+}
+
+.main_logo_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center !important;
+  border-bottom: 1px solid black;
+  margin: 0px 10px;
+  padding-bottom: 5px;
+}
+
+.company_logo {
+  display: flex;
+  border-bottom: 0px;
+  padding: 5px;
+  padding-left: 0px;
+}
+
+.company_logo img {
+  width: 95px;
+  height: 105px;
+}
+
+.company_logo_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.company_logo_text p {
+  font-size: 12px;
+  padding-left: 10px;
+  line-height: 18px;
+}
+
+.unit_title_wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px;
+}
+
+.unit_title_wrapper table tr td {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.container-content {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 0px 10px;
+  padding: 10px 10px;
+}
+
+.input-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.input-checkbox span {
+  font-size: 13px;
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+/*# sourceMappingURL=index.css.map */

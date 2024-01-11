@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)file:///D:/enesis/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+           margin-inline: 10vw;
+           margin-block: 30px;
+        }
+         header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+     
+        table, th {
+        border: 1px solid black;
+        border-collapse: collapse;
+            }
+
+
+            tr td {
+                border-right: 1px solid black;   
+            }
+
+            tr#total td {
+                border-right: none;
+            }
+
+            tr td:nth-child(2), tr th:nth-child(2) {
+                text-align: left;
+                padding-left: 10px;
+            }
+
+
+           tr td:not(:nth-child(2)) {
+                text-align: center;
+            }
+
+            footer {
+                margin-top: 30px;
+            }
+      
+        </style>
+    <title>Berita Acara Pengantar Peralihan</title>
+</head>
+<body>
+    <header>
+        <img id="logo" alt="Logo PT. Marketama Indah" src="@logo@">
+        <h3 id="judul">Berita Acara Pengantar Peralihan</h3>
+    </header>
+
+    <section>
+    <p>
+        <strong>Kepada Yth :</strong><br>
+        @soldto@<br>
+        di<br>
+        Tempat
+    </p>
+    </section>
+
+
+    <section>
+    <p><strong>Dengan hormat,</strong></p>
+    <p>
+        Bersama ini kami memberikan tugas kepada rekanan PT. Marketama indah:<br>
+        Untuk melakukan proses peralihan barang FG dari <strong> @asal@ </strong> ke <strong>@tujuan@<br>
+        </strong> dengan perincian barang FG sebagai berikut (sesuai FKR):
+    </p>
+
+        <table class="table-bordered" border=1 cellspacing="-1" cellpadding="2" width="100%">
+                <tr>
+                    <th>No</th>
+                    <th>Nama Item</th>
+                    <th>Kode</th>
+                    <th>Satuan</th>
+                    <th>Qty</th>
+                </tr>
+                <tbody>
+                    @detailTable@
+                    <tr id="total" style="border-top:1px solid black ;">
+                        <td colspan="4" ><Strong>Total</Strong></td>
+                        <td class="center" colspan="2" style="border-right:1px solid black ;"><Strong>@totalQuantity@</Strong></td>
+                    </tr>
+                </tbody>
+        </table>
+    <p>
+        Demikian Berita Acara ini dibuat agar dapat dipergunakan sebagaimana mestinya. Atas perhatian dan kerjasamanya<br>
+        kami ucapkan terima kasih
+    </p>
+</section>
+
+
+<section>
+<p style="margin-bottom: 50px;"><strong>Jakarta, @tanggal@</strong></p>
+
+<p style="color:cadetblue;">
+    <strong>
+        *Approved by system GT/MT Sales Head Tanggal @tanggalApprovalSalesHead@
+    </strong>  
+</p>
+
+<div style="display: flex; justify-content: space-between;">
+<div>
+    <p style="margin-bottom: 50px;"><strong>Diserahkan oleh:</strong></p>
+    <p>
+        <strong>
+            <u>(Nama &amp; Jabatan)</u><br>
+        </strong>
+            @asalSiganture@
+    </p>
+
+</div>
+<div>
+    <p style="margin-bottom: 50px;"><strong>Diterima oleh:</strong></p>
+    <p>
+        <strong>
+            <u>(Nama &amp; Jabatan)</u><br>
+        </strong>
+            @tujuanSiganture@
+    </p>
+
+</div>
+</div>
+
+<div>
+    <p style="margin-bottom: 50px;"><strong>Diketahui oleh:</strong></p>
+    <p>
+        <strong>
+            <u>(Nama &amp; Jabatan)</u><br>
+        </strong>
+            PT. MI (ASM / RSM)
+    </p>
+</div>
+</section>
+
+<footer>
+    <p><strong>
+        <u>Note:</u><br>
+        *Berita Acara wajib distampel dan tanda tangan lengkap Para pihak terkait.   
+    </strong></p>
+</footer>
+
+
+</body></html>

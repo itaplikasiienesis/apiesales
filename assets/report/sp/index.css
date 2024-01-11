@@ -1,0 +1,221 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+
+  font-family: "Tahoma";
+}
+
+.form-report {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px;
+}
+
+.main_title_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 50px 0px 20px;
+}
+
+.main_head {
+  text-align: center;
+  font-weight: bold;
+}
+  
+.main_head h3{
+  text-align: center;
+  font-weight: bold;
+}
+
+.main_logo_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: 'center';
+  padding: 10px 0px;
+}
+
+.company_logo {
+  display: flex;
+}
+
+.company_logo img {
+  width: 65px;
+  height: 75px;
+}
+
+.customtable tr td.center {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.customtable tr td.left {
+  text-align: left;
+  vertical-align: middle;
+}
+
+
+.customtable tr td.right {
+  text-align: right;
+  vertical-align: middle;
+}
+
+.company_logo_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.company_logo_text p {
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.unit_title_wrapper {
+  display: flex;
+  padding: 0 0 0 10px;
+}
+
+.unit_title_wrapper table tr td {
+  font-size: 9px;
+  font-weight: bold;
+}
+
+
+.unit_title_wrapper2 {
+  display: flex;
+  padding: 0 0 0 10px;
+  float: right;
+}
+
+.unit_title_wrapper2 table tr td {
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.customtable {
+  display: flex;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 2px;
+}
+
+.customtable table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin: 10px 10px 0;
+  justify-content: start;
+}
+
+.customtable tr th {
+  border: 0.1px solid black;
+  font-size: 9px;
+}
+
+.customtable tr td {
+  border: 0.1px solid black;
+  font-size: 9px;
+  text-align: center;
+  padding: 5px 5px;
+}
+
+.customtable tr .td-title {
+  border: 0.1px solid black;
+  font-size: 9px;
+}
+
+.terbilang {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+}
+
+
+.terbilang p{
+  font-size: 15px;
+  font-style: italic;
+  text-align: left;
+  margin: 30px 0 0;
+}
+
+
+.divkotak {
+  display: flex;
+  flex-direction: column;
+  border:1px solid black;
+}
+
+@font-face
+{font-family:"Cambria Math";
+panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+{font-family:"Arial Narrow";
+panose-1:2 11 6 6 2 2 2 3 2 4;}
+@font-face
+{font-family:Tahoma;
+panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+{margin:0cm;
+margin-bottom:.0001pt;
+font-size:12.0pt;
+font-family:"Times New Roman",serif;}
+a:link, span.MsoHyperlink
+{font-family:"Times New Roman",serif;
+color:blue;
+text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+{color:purple;
+text-decoration:underline;}
+strong
+{font-family:"Times New Roman",serif;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+{mso-style-link:"Document Map Char";
+margin:0cm;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:"Tahoma",sans-serif;}
+p
+{margin-right:0cm;
+margin-left:0cm;
+font-size:12.0pt;
+font-family:"Times New Roman",serif;}
+span.DocumentMapChar
+{mso-style-name:"Document Map Char";
+mso-style-link:"Document Map";
+font-family:"Tahoma",sans-serif;}
+.MsoChpDefault
+{font-size:11.0pt;}
+.MsoPapDefault
+{margin-bottom:10.0pt;
+line-height:115%;}
+@page WordSection1
+{size:21.0cm 841.95pt;
+margin:72.0pt 90.0pt 72.0pt 81.0pt;}
+div.WordSection1
+{page:WordSection1;}
+/* List Definitions */
+ol
+{margin-bottom:0cm;}
+ul
+{margin-bottom:0cm;}
+/* x */
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{baseurl}}\index.css">
+</head>
+
+<body>
+
+    <div class="form-report">
+        <div class="main_title_wrapper">
+            <div class="main_head">
+                <h3>Faktur Penjualan</h3>
+                <p>No : {{nomor_tittle}}</p>
+            </div>
+        </div>
+        <div class="main_logo_wrapper">
+            <div class="company_logo">
+                <img src="{{logoo}}" alt="logo">
+            </div>
+            <div class="company_logo_text">
+                <p>PT. MARKETAMA INDAH</p>
+                <p>Jl. Rawa Sumur III Blok DD No. 13</p>
+                <p>PULO GADUNG - JAKARTA - INDONESIA 13930</p>
+                <p>Up : Bapak Joseph Barus</p>
+                <p>Telp : +62 2 1 4609482</p>
+                <p>Fax : 62 21 4600320 </p>
+            </div>
+        </div>
+        
+        <div class="unit_title_wrapper">
+            <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Kepada Yth</td>
+                        </tr>
+                        <tr>
+                            <td>Nama</td>
+                            <td>:</td>
+                            <td>{{nama_soldto}}</td>
+                        </tr>
+                        <tr>
+                            <td>Alamat</td>
+                            <td>:</td>
+                            <td>{{alamat_soldto}}</td>
+                        </tr>
+                        <tr>
+                            <td>NPWP</td>
+                            <td>:</td>
+                            <td>{{npwp}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+             <div style="padding: 0 0 0 120px;">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Kepada Yth</td>
+                        </tr>
+                        <tr>
+                            <td>Nama</td>
+                            <td>:</td>
+                            <td>{{nama_shipto}}</td>
+                        </tr>
+                        <tr>
+                            <td>Alamat</td>
+                            <td>:</td>
+                            <td>{{alamat_shipto}}</td>
+                        </tr>
+               
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="unit_title_wrapper2">
+            <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Kode Pelanggan / Sales</td>
+                            <td>:</td>
+                            <td>{{kode_pelanggan}}</td>
+                        </tr>
+                        <tr>
+                            <td>No Pesanan Pembeli / PO No</td>
+                            <td>:</td>
+                            <td>{{nomor_pesanan_pembeli}}</td>
+                        </tr>
+                        <tr>
+                            <td>No Surat Jalan / SO No </td>
+                            <td>:</td>
+                            <td>{{surat_jalan_dan_so}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+             <div style="padding: 0 0 0 120px;">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Syarat Pembayaran</td>
+                            <td>:</td>
+                            <td>{{syarat_pembayaran}}</td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal Jatuh Tempo</td>
+                            <td>:</td>
+                            <td>{{jatuh_tempo}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="customtable">
+            <table>
+                <thead>
+                    <tr>
+                        <th rowSpan="2">No Unit</th>
+                        <th rowSpan="2">Kode Produk</th>
+                        <th rowSpan="2">Nama Barang Kena Pajak / Jasa Kena Pajak</th>
+                        <th colSpan="2">Satuan (Qty) </th>
+                        <th rowSpan="2">Harga Satuan (Per carton)</th>
+                        <th rowSpan="2">Diskon (Per carton)</th>
+                        <th rowSpan="2">Total Nilai Penjualan (Rp)</th>
+                    </tr>
+                    <tr>
+                        <th>Pcs</th>
+                        <th>Crt</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{{table}}}
+                </tbody>
+            </table>
+        </div>
+        <div class="terbilang">
+            <p >{{terbilang}}</p>
+        </div>
+        
+        <textarea class="divkotak" rows="8" cols="50">Perhatian : 
+1. Mohon mencantumkan No. Faktur Penjualan di setiap pelunasan 
+2. Faktur ini bukan merupakan bukti pembayaran
+        </textarea>
+    </div>
+</body>
+
+</html>

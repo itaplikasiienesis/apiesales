@@ -1,0 +1,26 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:rfc:functions">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:ZFM_WS_RLIMIT>
+         <DATA>
+            <!--Zero or more repetitions:-->
+            <item>
+               <VBELN></VBELN>
+               <KUNNR></KUNNR>
+               <NAME1></NAME1>
+               <ORT01></ORT01>
+               <VTWEG></VTWEG>
+               <VDATU></VDATU>
+               <WAERK></WAERK>
+               <NETWR></NETWR>
+               <AMOUNT></AMOUNT>
+               <WAERS></WAERS>
+               <LIMIT></LIMIT>
+               <EXPOSURE></EXPOSURE>
+               <BSTNK></BSTNK>
+            </item>
+         </DATA>
+            ?
+      </urn:ZFM_WS_RLIMIT>
+   </soapenv:Body>
+</soapenv:Envelope>

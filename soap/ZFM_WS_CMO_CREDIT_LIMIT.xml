@@ -1,0 +1,8 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:rfc:functions">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:ZFG_WS_LIMITCEK>
+         ?
+      </urn:ZFG_WS_LIMITCEK>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="@baseurl@\index.css">
+</head>
+
+
+<style>
+    .type-document{
+        float:right;
+        top: 20px;
+        right: 40px;
+    }
+    
+    .sansserif {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+    
+    .mono-space {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 12px;
+    }
+    </style>
+
+<body>
+    <div class="row">
+        <table border="0" width="100%" hight="100">
+            <tr>
+                <td width="50%">
+                    <img src="@logo@" width="80" height="80">
+                </td>
+                <td align="right">
+                    <div style="font-size: 12px">
+                        <h3>ENESIS GROUP</h3>
+                        Jl. Rawa Sumur III, Blok DD No. 13 <br/>
+                        Pulo Gadung Industrial Estate <br/>
+                        Jakarta 13930
+                    </div>
+                </td>
+            </tr>
+            <tr style="background-color: black">
+                <td colspan="2" align="center">
+                    <span style="color: white">E-PROPOSAL</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 col-sm-12">
+                                
+                                    <table class="table-bordered" border=1 cellspacing="-1" cellpadding="2" width="100%">
+                                        <tr class="sansserif">
+                                            <th> Nomor </th>
+                                            <th> Company Code </th>
+                                            <th> Division Code </th>
+                                            <th> Branch </th>
+                                            <th> Proposal No </th>
+                                            <th> Proposal Date</th>
+                                            <th> Month</th>
+                                            <th> title</th>
+                                            <th> Budget Year</th>
+                                            <th> Nominal Budget</th>
+                                            <th> Status</th>
+                                            <th> Activity Code</th>
+                                            <th> Activity</th>
+                                            <th> Start Date</th>
+                                            <th> Brand</th>
+                                            <th> Last Approve</th>
+                                            <th> Outlet</th>
+                                        </tr>
+                                        @list@
+                                    </table>
+                            </div>
+                        </div>
+                        <br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>

@@ -1,0 +1,28 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:rfc:functions">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:ZFM_WS_NOEE>
+         <AUFNR>?</AUFNR>
+         <!--Optional:-->
+         <ITAB>
+            <!--Zero or more repetitions:-->
+            <item>
+               <AUFNR></AUFNR>
+               <DWERK></DWERK>
+               <MATNR></MATNR>
+               <MAKTX></MAKTX>
+               <PSMNG></PSMNG>
+               <LMNGA></LMNGA>
+               <XMNGA></XMNGA>
+               <GMEIN></GMEIN>
+               <GSTRP></GSTRP>
+               <PLNTM></PLNTM>
+               <ISM01></ISM01>
+               <ILE01></ILE01>
+               <ARBPL></ARBPL>
+               <KTEXT></KTEXT>
+            </item>
+         </ITAB>
+      </urn:ZFM_WS_NOEE>
+   </soapenv:Body>
+</soapenv:Envelope>

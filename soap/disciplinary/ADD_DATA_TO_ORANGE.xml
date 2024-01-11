@@ -1,0 +1,22 @@
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body>
+        <addEmpDisciplinary xmlns="http://api.hrbase.sps.com">
+            <req_employee_id>param_req_employee_id</req_employee_id>
+            <company_id>param_company_id</company_id>
+            <employee_id>param_employee_id</employee_id>
+            <incident_date>param_incident_date</incident_date>
+            <violation>param_violation</violation>
+            <effect_violation>param_effect_violation</effect_violation>
+            <advice_given>param_advice_given</advice_given>
+            <sanction_given>param_sanction_given</sanction_given>
+            <date_issue>param_date_issue</date_issue>
+            <note>param_note</note>
+            <violation_degree>param_violation_degree</violation_degree>
+            <violation_type>param_violation_type</violation_type>
+            <warning_level>param_warning_level</warning_level>
+            <expiry_date>param_expiry_date</expiry_date>
+            <issued_by_company_id>param_issued_by_company_id</issued_by_company_id>
+            <issued_by>param_issued_by</issued_by>
+        </addEmpDisciplinary>
+    </Body>
+</Envelope>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{baseurl}}views/jsa/index.css">
+</head>
+
+<body>
+    <div class="headerImage">
+        <img src="{{baseurl}}views/header.jpeg" alt="tes">
+    </div>
+    <div class="main_title_wrapper">
+        <div class="company_logo logo1">
+            <img src="{{baseurl}}views/logo1.png" alt="tes">
+        </div>
+        <div class="company_logo logo2">
+            <img src="{{baseurl}}views/sik3.png" alt="tes">
+        </div>
+        <div class="main_head">
+            <h5>PT PLN (PERSERO) UNIT INDUK DISTRIBUSI JAWA BARAT</h5>
+            <h5>UNIT PELAKSANA PELAYANAN PELANGGAN BEKASI</h5>
+            <h5>JOB SAFETY ANALYSIS</h5>
+            <h5>ANALISIS KESELAMATAN KERJA</h5>
+        </div>
+        <div class="company_logo logo3">
+            <img src="{{baseurl}}views/pln.png" alt="tes">
+        </div>
+    </div>
+    <div class="informasipekerjaan">
+        <div class="mainTitle">A. INFORMASI PEKERJAAN</div>
+        <div class="jarak">
+            <table>
+                <tbody>
+                    <tr>
+                        <td width="1">1.</td>
+                        <td width="150px">Unit Pelaksana</td>
+                        <td>:</td>
+                        <td>{{unitpelaksana}}</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Tanggal</td>
+                        <td>:</td>
+                        <td>{{tanggal}}</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Jenis Pekerjaan</td>
+                        <td>:</td>
+                        <td>{{jenispekerjaan}}</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>Detail Pekerjaan</td>
+                        <td>:</td>
+                        <td>{{detailpekerjaan}}</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>Penyulang / Gardu Induk</td>
+                        <td>:</td>
+                        <td>{{garduinduk}}</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td>Lokasi</td>
+                        <td>:</td>
+                        <td>{{lokasi}}</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td>Perusahaan Pelaksana Pekerjaan</td>
+                        <td>:</td>
+                        <td>{{pelaksana}}</td>
+                    </tr>
+                    <tr>
+                        <td>8.</td>
+                        <td>Pelaksana Pekerjaan</td>
+                        <td>:</td>
+                        <td>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>NAMA</th>
+                                        <th colSpan="2">TANDA TANGAN</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {{{pelaksanapekerjaan}}}
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="peralatankeselamatan">
+        <div class="mainTitle">A. INFORMASI PEKERJAAN</div>
+        <div class="jarak">
+            {{{alat}}}
+        </div>
+    </div>
+
+    <table class="jsatable" width="100%">
+        <thead>
+            <tr>
+                <th>NO.</th>
+                <th>LANGKAH PEKERJAAN</th>
+                <th>POTENSI BAHAYA DAN RESIKO</th>
+                <th>TINDAKAN PENGENDALIAN</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{{table}}}
+        </tbody>
+    </table>
+
+    {{!-- FOOTER --}}
+
+    <div class="footer_approve_text">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="col-3">
+                            <p>DISETUJUI OLEH:</p>
+                            <div class="ttd">
+                                <img src="{{baseurl}}filepathsign/{{signature4}}" alt="tes">
+                            </div>
+                            <div>{{penandatangan4}}</div>
+                            <div>( Manager Bagian Jaringan )</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col-3">
+                            <p>DIPERIKSA OLEH:</p>
+                            <div class="ttd">
+                                <img src="{{baseurl}}filepathsign/{{signature3}}" alt="tes">
+                            </div>
+                            <div>{{penandatangan3}}</div>
+                            <div>( Spv Teknik )</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col-3">
+                            <p>DIPERIKSA OLEH:</p>
+                            <div class="ttd">
+                                <img src="{{baseurl}}filepathsign/{{signature2}}" alt="tes">
+                            </div>
+                            <div>{{penandatangan2}}</div>
+                            <div>( Pejabat Pelaksana K3L )</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col-3">
+                            <p>DISUSUN OLEH:</p>
+                            <div class="ttd">
+                                <img src="{{baseurl}}filepathsign/{{signature1}}" alt="tes">
+                            </div>
+                            <div>{{penandatangan1}}</div>
+                            <div>( Pengawas Pekerjaan )</div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer_keterangan">
+        <p>KETERANGAN</p>
+        <ol>
+            <li>
+                STATUS "OK" PADA KOLOM STATUS PENGENDALIAN DITULIS HANYA JIKA
+                TINGKAT RESIKO SUDAH DALAM KATEGORI LOW/ RENDAH
+            </li>
+            <li>
+                PADA UNIT INDUK UNTUK KOLOM PERSAETUJUAN DITANDATANGANI OLEH DEPUTI
+                MANAGER DAN PEJABAT PENGENDALI K3L
+            </li>
+            <li>
+                PADA SUB UNIT PELAKSANA UNTUK KOLOM PERSETUJUAN DITANDATANGANI OLEH
+                MANAGER SUB UNIT PELAKSANA
+            </li>
+        </ol>
+    </div>
+    <div class="headerImage">
+        <img src="{{baseurl}}views/footer.jpeg" alt="tes">
+    </div>
+</body>
+
+</html>

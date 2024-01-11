@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{baseurl}}\index.css">
+</head>
+
+<body>
+
+    <div class="form-report">
+        <div class="main_title_wrapper">
+            <div class="main_head">
+                <h3>FORM KONFIRMASI RETUR BARANG</h3>
+            </div>
+        </div>
+        <div class="main_logo_wrapper">
+            <div class="company_logo">
+                <img src="{{logoo}}" alt="logo">
+            </div>
+            <div class="company_logo_text">
+                <p>PT. MARKETAMA INDAH</p>
+                <p>Jl. Rawa Sumur III Blok DD No. 13</p>
+                <p>PULO GADUNG - JAKARTA - INDONESIA 13930</p>
+                <p>Up : Bapak Joseph Barus</p>
+                <p>Telp : +62 2 1 4609482</p>
+                <p>Fax : 62 21 4600320 </p>
+            </div>
+        </div>
+        
+        <div class="unit_title_wrapper">
+            <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Nomor FKR</td>
+                            <td>:</td>
+                            <td>{{nomor_fkr}}</td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal FKR</td>
+                            <td>:</td>
+                            <td>{{tanggal_fkr}}</td>
+                        </tr>
+                        <tr>
+                            <td>Nomor GR</td>
+                            <td>:</td>
+                            <td>{{nomor_gi}}</td>
+                        </tr>
+                        <tr>
+                            <td>Periode FKR</td>
+                            <td>:</td>
+                            <td>{{bulan}} - {{tahun}}</td>
+                        </tr>
+                        <tr>
+                            <td>Distributor</td>
+                            <td>:</td>
+                            <td>{{nama_distributor}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+             <div style="padding: 0 0 0 30px;">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Nomor FKR</td>
+                            <td>:</td>
+                            <td>{{nomor_fkr}}</td>
+                        </tr>
+                        <tr>
+                            <td>Nomor SO Retur</td>
+                            <td>:</td>
+                            <td>{{nomor_so}}</td>
+                        </tr>
+                        <tr>
+                            <td>Nomor CN</td>
+                            <td>:</td>
+                            <td>{{nomor_cn}}</td>
+                        </tr>
+                        <tr>
+                            <td>Nilai SO</td>
+                            <td>:</td>
+                            <td>{{nilai_so}}</td>
+                        </tr>
+                        <tr>
+                            <td>Presentase</td>
+                            <td>:</td>
+                            <td>{{persentase}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="customtable">
+            <table>
+                <thead>
+                    <tr>
+                        <th rowSpan="2">No</th>
+                        <th rowSpan="2">Kode SAP</th>
+                        <th rowSpan="2">Kode MI</th>
+                        <th rowSpan="2">Nama Barang</th>
+                        <th rowSpan="2">Satuan</th>
+                        <th rowSpan="2">Total Retur</th>
+                        <th colSpan="10">Alasan</th>
+                        <th rowSpan="2">Keterangan Khusus Expired atau Damage Produk</th>
+                    </tr>
+                    <tr>
+                        <th>Expired Gudang (Z2)</th>
+                        <th>Expired Toko (Z2)</th>
+                        <th>Damage (Z1)</th>
+                        <th>Recall (Z3)</th>
+                        <th>Retur Administratif (Z4)</th>
+                        <th>Rusak di Jalan (Z5)</th>
+                        <th>Misspart (Z6)</th>
+                        <th>Peralihan (Z7)</th>
+                        <th>Repalcement (Z8)</th>
+                        <th>Delisting (Z9)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{{table}}}
+                </tbody>
+            </table>
+        </div>
+
+        <div style="display: flex; justify-content: space-between;">
+            <div style="display: flex; justify-content: space-between;">
+                <div class="signature">
+                    <span>Dibuat :</span>
+                    <p>(..........................................)</p>
+                    <span>Distributor</span>
+                </div>
+                <!-- <div class="signature">
+                    <span>Diperiksa : </span>
+                    <p>(..........................................)</p>
+                    <span>ASDH/ ASDH MT/ ASPH PT.MI</span>
+                </div> -->
+            </div>
+            <!-- <div class="signature">
+                <span>Disetujui : </span>
+                <p>(..........................................)</p>
+                <span>RSDH PT.MI</span>
+            </div> -->
+        </div>
+
+                <div class="customtable">
+            <table>
+                <thead>
+                    <tr>
+                        <th colSpan="3">Approval Progress</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{!-- <tr>
+                        <td>1.</td>
+                        <td>COO</td>
+                        <td>Approved</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>CSMO</td>
+                        <td>Approved</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Sales Head</td>
+                        <td>Approved</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>RSDH</td>
+                        <td>Approved</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>ASDH</td>
+                        <td>Approved</td>
+                    </tr> --}}
+                    {{{tableprogress}}}
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

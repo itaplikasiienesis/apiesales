@@ -1,0 +1,51 @@
+<html>
+    <body>
+        <div style="width: auto; background-color: #006e2e; padding: 20px; border-radius: 10px;">
+               <b>@subject@</b>
+                <br>
+                <br>
+                <table>
+                    <tr>
+                        <td>Nama File</td>
+                        <td>:</td>
+                        <td>@filename@</td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal</td>
+                        <td>:</td>
+                        <td>@tanggal@</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><b>*Jumlah Data yang berhasil di adjustment*</b></td>
+                    </tr>
+                    <tr>
+    
+                        <td colspan="3">
+                            <table border = 1>
+                                <tr>
+                                    <td>Nomor CMO</td>
+                                    <td>Distributor</td>
+                                    <td>Kode SKU</td>
+                                    <td>Quantity Sebelumnya</td>
+                                    <td>Quantity Perubahan</td>
+                                    <td>Total Order Sebelumnya</td>
+                                    <td>Total Order Nett Sebelumnya</td>
+                                    <td>Total Order Perubahan</td>
+                                    <td>Total Order Nett Perubahan</td>
+                                    <td>Week Number</td>
+                                </tr>
+                                @details@
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><b>*Template Lulus Validasi*</b></td>
+                        <td colspan="3"><b>*replacement SKU Sukses*</b></td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <a style="color: red;" href="http://esales.enesis.com/signin"  target="_blank">Klik Untuk Login</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cetakan Faktur</title>
+    <link rel="stylesheet" href="@baseurl@\index.css">
+</head>
+
+
+<style>
+    body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+
+  font-family: "Tahoma";
+}
+
+.form-report {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px;
+}
+
+.main_title_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 50px 0px 30px;
+}
+
+.main_head {
+  text-align: center;
+  font-weight: bold;
+}
+  
+.main_head h3{
+  text-align: center;
+}
+
+.main_logo_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center !important;
+  border-bottom: 1px solid black;
+  margin: 0px 10px;
+  padding-bottom: 5px;
+}
+
+.company_logo {
+  display: flex;
+  border-bottom: 0px;
+  padding: 5px;
+  padding-left: 0px;
+}
+
+.company_logo img {
+  width: 95px;
+  height: 105px;
+}
+
+.company_logo_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.company_logo_text p {
+  font-size: 12px;
+  padding-left: 10px;
+  line-height: 18px;
+}
+
+.unit_title_wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px;
+}
+
+.unit_title_wrapper table tr td {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.container-content {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 0px 10px;
+  padding: 10px 10px;
+}
+
+.input-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.input-checkbox span {
+  font-size: 13px;
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+/*# sourceMappingURL=index.css.map */
+
+    </style>
+
+<body>
+
+    <div class="form-report">
+        <div class="main_title_wrapper">
+            <div class="main_head">
+                <h2>INVOICING TRANSPORTER</h2>
+            </div>
+        </div>
+        <div class="main_logo_wrapper">
+            <div class="company_logo">
+                <img src="@logo@" width="80" height="80">
+            </div>
+            <div class="company_logo_text">
+                <p>PT. MARKETAMA INDAH</p>
+                <p>Jl. Rawa Sumur III Blok DD No. 13</p>
+                <p>PULO GADUNG - JAKARTA - INDONESIA 13930</p>
+                <p>Up : Bapak Joseph Barus</p>
+                <p>Telp : +62 2 1 4609482</p>
+                <p>Fax : 62 21 4600320 </p>
+            </div>
+        </div>
+        <div class="unit_title_wrapper">
+            <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Nomor Document</td>
+                            <td>:</td>
+                            <td>@documentno@</td>
+                        </tr>
+                        <tr>
+                            <td>Transporter</td>
+                            <td>:</td>
+                            <td>@nama@</td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal Pengajuan</td>
+                            <td>:</td>
+                            <td>@tanggal_invoice@</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="container-content">
+            <div class="input-checkbox">
+                <input type="checkbox">
+                <span>Kwitansi</span>
+            </div>
+            <div class="input-checkbox">
+                <input type="checkbox">
+                <span>Invoice</span>
+            </div>
+            <div class="input-checkbox">
+                <input type="checkbox">
+                <span>Faktur Pajak</span>
+            </div>
+            <div class="input-checkbox">
+                <input type="checkbox">
+                <span>NPB / DO</span>
+            </div>
+            <div class="input-checkbox">
+                <input type="checkbox" @bast@>
+                <span>Berita Acara</span>
+            </div>
+            <div class="input-checkbox">
+                <input type="checkbox">
+                <span>Form Kubikasi</span>
+            </div>
+        </div>
+
+        <br>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-md-12 col-xs-12 col-sm-12">
+                        <table class="table-bordered" border=1 cellspacing="-1" cellpadding="2" width="100%">
+                            <tr>
+                                <td colspan="10" style="background-color: black" >  
+                                    <span style="color: black"> Detail </span>
+                                </td>
+                            </tr>
+                            <tr class="sansserif">
+                                <th> No </th>
+                                <th> Bundle / Console </th>
+                                <th> Kode Kendaraan </th>
+                                <th> Jenis Kendaraan </th>
+                                <th> Tanggal POD </th>
+                                <th> No. PO  </th>
+                                <th> No. GR </th>
+                                <th> Cost Shipment </th>
+                                <th> Additional Cost </th>
+                                <th> Total Cost </th>
+                            </tr>
+                            @tabledetail@
+                        </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="unit_title_wrapper">
+            <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Logistik</td>
+                            <td>:</td>
+                            <td>@date_approve_logistik@</td>
+                        </tr>
+                        <tr>
+                            <td>Logistik Head</td>
+                            <td>:</td>
+                            <td>@date_approve_logistik_head@</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="@baseurl@\index.css">
+</head>
+
+
+<style>
+    .type-document{
+        float:right;
+        top: 20px;
+        right: 40px;
+    }
+    
+    .sansserif {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+    
+    .mono-space {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 12px;
+    }
+    </style>
+
+<body>
+    <div class="row">
+        <table border="0" width="100%" hight="100">
+            <tr>
+                <td width="50%">
+                    <img src="@logo@" width="80" height="80">
+                </td>
+                <td align="right">
+                    <div style="font-size: 12px">
+                        <h3>ENESIS GROUP</h3>
+                        Jl. Rawa Sumur III, Blok DD No. 13 <br/>
+                        Pulo Gadung Industrial Estate <br/>
+                        Jakarta 13930
+                    </div>
+                </td>
+            </tr>
+            <tr style="background-color: black">
+                <td colspan="2" align="center">
+                    <span style="color: white">E-PROPOSAL</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-title" style='text-align:right;'>
+                        <b>
+                        @referensi_no@
+                        </b>
+                    </p>
+    <!--                 <div class="type-document">
+                    </div> -->
+                    <div class="row">
+                        <table border="0" width="100%" hight="100">
+                            <tr>
+                                <td width="65%">
+                                    <table border="0" width="100%" class="sansserif">
+                                        <tr>
+                                            <td width="30%">
+                                                <b>Title</b>
+                                            </td>
+                                            <td width="5%">:</td>
+                                            <td>
+                                                @title@
+                                            </td>
+                                        </tr> 
+                                        <tr>
+                                            <td width="30%">
+                                                <b>Division</b>
+                                            </td>
+                                            <td width="5%">:</td>
+                                            <td>
+                                                @divisionandcompany@
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Doc No</b>
+                                            </td>
+                                            <td>:</td>
+                                            <td>
+                                                @proposal_no@
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Company</b>
+                                            </td>
+                                            <td>:</td>
+                                            <td>
+                                                @company_code@
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Date</b>
+                                            </td>
+                                            <td>:</td>
+                                            <td>
+                                                @proposal_date@
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Budget Year</b>
+                                            </td>
+                                            <td>:</td>
+                                            <td>
+                                                @budget_year@
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td> <b>Market Type</b> </td> 
+                                            <td> : </td> 
+                                            <td> 
+                                                @markettypeHtmllist@
+                                            </td>
+                                        </tr> 
+                                        
+                                        <tr valign="top">
+                                            <td> <b>Print By </b></td> 
+                                            <td> : </td> 
+                                            <td> 
+                                                @nama@
+                                            </td>
+                                        </tr>                                 
+                                    </table>
+                                </td>
+                                <td>
+                                    <table border="0" width="100%" class="sansserif">
+                                        <tr>
+                                            <td>
+                                                <b>Region</b>
+                                            </td>
+                                            <td>:</td>
+                                            <td>
+                                                @region@
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Branch</b>
+                                            </td>
+                                            <td>:</td>
+                                            <td>
+                                                @branch@
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Brand</b>
+                                            </td>
+                                            <td>:</td>
+                                            <td>
+                                                @brand_text@
+                                            </td>
+                                        </tr>
+                                        <tr valign="top">
+                                            <td>
+                                                <b>SKU</b>
+                                            </td>
+                                            <td>:</td>
+                                            <td>
+                                                @sku@
+                                            </td>
+                                        </tr>
+                                        <tr valign="top">
+                                            <td >
+                                                <b>Eksekutor</b>
+                                            </td>
+                                            <td>:</td>
+                                            <td>
+                                                @executorlist@
+                                            </td>
+                                        </tr>
+                                        <tr valign="top">
+                                            <td> <b>Distributor / Customer </b></td> 
+                                            <td> : </td> 
+                                            <td> 
+                                                @distributorlist@
+                                            </td>
+                                        </tr>
+                                        <tr valign="top">
+                                            <td> <b>Print Date </b></td> 
+                                            <td> : </td> 
+                                            <td> 
+                                               @now@
+                                            </td>
+                                        </tr>
+                                        <tr valign="top">
+                                            <td> <b>Status </b></td> 
+                                            <td> : </td> 
+                                            <td> 
+                                                <b style="color:green">@status@</b>
+                                            </td>
+                                        </tr>
+                                        <tr valign="top">
+                                            <td> <b>Total Budget </b></td> 
+                                            <td> : </td> 
+                                            <td> 
+                                                @totalbudget@
+                                            </td>
+                                        </tr>  
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div>
+                        <table border="1" width="100%" cellspacing="-1" cellpadding="2" class="table table-bordered" >
+                            <tr class="sansserif" >
+                                <td width="50%"><b>Background</b></td>
+                                <td><b>Mechanism</b></td>
+                            </tr>
+                            <tr valign="top" class="mono-space">
+                                <td>@background@</td>
+                                <td>@mechanism@</td>
+                            </tr>
+                        </table>
+                        <br/>
+                        <table border="1" width="100%" cellspacing="-1" cellpadding="2" class="table table-bordered">
+                            <tr class="sansserif" >
+                                <td width="50%"><b>Objective</b></td>
+                                <td><b>KPI</b></td>
+                            </tr>
+                            <tr valign="top" class="mono-space">
+                                <td>@objective@</td>
+                                <td>@kpi@</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <br />
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 col-sm-12">
+                                
+                                    <table class="table-bordered" border=1 cellspacing="-1" cellpadding="2" width="100%">
+                                        <tr>
+                                            <td colspan="7" style="background-color: black" >  
+                                                <span style="color: white"> Budget </span>
+                                            </td>
+                                        </tr>
+                                        <tr class="sansserif">
+                                            <th> No </th>
+                                            <th> Division </th>
+                                            <th> Periode </th>
+                                            <th> Branch </th>
+                                            <th> Brand  </th>
+                                            <th> Activity </th>
+                                            <th> Budget to Approved </th>
+                                        </tr>
+                                        @tablebudget@
+                                    </table>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                             @tableprogress@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script type="text/php">
+if ( isset($pdf) ) { 
+    $pdf->page_script('
+        if ($PAGE_COUNT >= 1) {
+            $font = $fontMetrics->get_font("Arial, Helvetica, sans-serif", "normal");
+            $size = 11;
+            $pageText = "E-PROPOSAL - Page " . $PAGE_NUM . " of " . $PAGE_COUNT;
+            $y = 10;
+            $x = 35;
+            $pdf->text($x, $y, $pageText, $font, $size);
+        } 
+    ');
+}
+</script>

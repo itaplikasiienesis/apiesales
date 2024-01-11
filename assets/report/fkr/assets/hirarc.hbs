@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{baseurl}}views/hirarc/index.css">
+</head>
+
+<body>
+    <div class="headerImage">
+        <img src="{{baseurl}}views/header.jpeg" alt="tes">
+    </div>
+    <div class="main_title_wrapper">
+        <div class="company_logo logo1">
+            <img src="{{baseurl}}views/logo1.png" alt="tes">
+        </div>
+        <div class="company_logo logo2">
+            <img src="{{baseurl}}views/sik3.png" alt="tes">
+        </div>
+        <div class="main_head">
+            <h5>{{tittle1}}</h5>
+            <h5>{{tittle2}}</h5>
+            <h5>{{tittle3}}</h5>
+        </div>
+        <div class="company_logo logo3">
+            <img src="{{baseurl}}views/pln.png" alt="tes">
+        </div>
+    </div>
+    <div class="unit_title_wrapper">
+        <div></div>
+        <div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Nama Unit</td>
+                        <td>:</td>
+                        <td>{{unit_pelaksana}}</td>
+                    </tr>
+                    <tr>
+                        <td>Bidang</td>
+                        <td>:</td>
+                        <td>{{bidang}}</td>
+                    </tr>
+                    <tr>
+                        <td>Pekerjaan</td>
+                        <td>:</td>
+                        <td>
+                            <b>{{jenis_pekerjaan}}</b>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr />
+    <hr />
+    <div class="main_subtitle_wrapper">
+        <div class="main_head">
+            <p class="underline">{{tittle4}}</p>
+            <p>{{tittle5}}</p>
+        </div>
+        <div class="tanggal">
+            <table>
+                <tbody>
+                    <tr>
+                        <td width="40%">No. Dokumen</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal</td>
+                        <td align="center">{{tanggal}}</td>
+                    </tr>
+                    <tr>
+                        <td>Revisi</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Halaman</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <table class="customtable">
+        <thead>
+            <tr>
+                <th rowSpan="2">Kegiatan</th>
+                <th rowSpan="2">Potensi Bahaya</th>
+                <th rowSpan="2">Resiko</th>
+                <th colSpan="3">Penilaian Resiko</th>
+                <th rowSpan="2">Pengendalian Resiko</th>
+                <th colSpan="3">Pengendalian Resiko</th>
+                <th rowSpan="2">Status Pengendalian</th>
+                <th rowSpan="2">Penanggung Jawab</th>
+            </tr>
+            <tr>
+                <th>Konsekuensi</th>
+                <th>Kemungkinan</th>
+                <th>Tingkat Resiko</th>
+                <th>Konsekuensi</th>
+                <th>Kemungkinan</th>
+                <th>Tingkat Resiko</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{{table}}}
+        </tbody>
+    </table>
+
+    {{!-- FOOTER --}}
+
+    <div class="footer_table_wrapper">
+        <table class="wrapper">
+            <tbody>
+                <tr>
+                    <td width="30%">
+                        <table class="left">
+                            <thead>
+                                <tr>
+                                    <th rowSpan="2">Kemungkinan</th>
+                                    <th colSpan="5">Konsekuensi</th>
+                                </tr>
+                                <tr>
+                                    <th>1</th>
+                                    <th>2</th>
+                                    <th>3</th>
+                                    <th>4</th>
+                                    <th>5</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>A</td>
+                                    <td>M</td>
+                                    <td>M</td>
+                                    <td>H</td>
+                                    <td>E</td>
+                                    <td>R</td>
+                                </tr>
+                                <tr>
+                                    <td>B</td>
+                                    <td>L</td>
+                                    <td>M</td>
+                                    <td>H</td>
+                                    <td>E</td>
+                                    <td>E</td>
+                                </tr>
+                                <tr>
+                                    <td>C</td>
+                                    <td>L</td>
+                                    <td>M</td>
+                                    <td>H</td>
+                                    <td>H</td>
+                                    <td>E</td>
+                                </tr>
+                                <tr>
+                                    <td>D</td>
+                                    <td>L</td>
+                                    <td>D</td>
+                                    <td>M</td>
+                                    <td>H</td>
+                                    <td>E</td>
+                                </tr>
+                                <tr>
+                                    <td>E</td>
+                                    <td>L</td>
+                                    <td>L</td>
+                                    <td>M</td>
+                                    <td>H</td>
+                                    <td>H</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td width="10%">&nbsp;</td>
+                    <td width="60%" align="right">
+                        <table class="right">
+                            <thead>
+                                <tr>
+                                    <th colSpan="3">PENJELASAN</th>
+                                </tr>
+                                <tr>
+                                    <th>TINGKAT RESIKO</th>
+                                    <th>KEMUNGKINAN</th>
+                                    <th>KONSEKUENSI</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>E = EKSTREME RISK</td>
+                                    <td>A = Hampir pasti akan terjadi / Almost Certain</td>
+                                    <td>1. Tidak ada cedera, kerugian materi kecil</td>
+                                </tr>
+                                <tr>
+                                    <td>H = HIGH RISK</td>
+                                    <td>B = Cenderung untuk terjadi / Likety</td>
+                                    <td>2. Cedera ringan/P3K, kerugian cukup materi sedang</td>
+                                </tr>
+                                <tr>
+                                    <td>M = MODERATE RISK</td>
+                                    <td>C = Mungkin dapat terjadi / Moderate</td>
+                                    <td>3. Hilang hari kerja, kerugian cukup besar</td>
+                                </tr>
+                                <tr>
+                                    <td>L = LOW RISK</td>
+                                    <td>C = Kecil kemungkinan terjadi / Unlikety</td>
+                                    <td>4. Cacat, kerugian materi besar</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>E = Jarang terjadi / Rare</td>
+                                    <td>5. Kematian, kerugian materi sangat besar</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer_approve_text">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="col-3">
+                            <p>DISETUJUI OLEH:</p>
+                            <div class="ttd">
+                                <img src="{{baseurl}}filepathsign/{{signature4}}" alt="tes">
+                            </div>
+                            <div>{{penandatangan4}}</div>
+                            <div>( Manager Bagian Jaringan )</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col-3">
+                            <p>DIPERIKSA OLEH:</p>
+                            <div class="ttd">
+                                <img src="{{baseurl}}filepathsign/{{signature3}}" alt="tes">
+                            </div>
+                            <div>{{penandatangan3}}</div>
+                            <div>( Spv Teknik )</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col-3">
+                            <p>DIPERIKSA OLEH:</p>
+                            <div class="ttd">
+                                <img src="{{baseurl}}filepathsign/{{signature2}}" alt="tes">
+                            </div>
+                            <div>{{penandatangan2}}</div>
+                            <div>( Pejabat Pelaksana K3L )</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col-3">
+                            <p>DISUSUN OLEH:</p>
+                            <div class="ttd">
+                                <img src="{{baseurl}}filepathsign/{{signature1}}" alt="tes">
+                            </div>
+                            <div>{{penandatangan1}}</div>
+                            <div>( Pengawas Pekerjaan)</div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer_keterangan">
+        <p>KETERANGAN</p>
+        <ol>
+            <li>
+                STATUS "OK" PADA KOLOM STATUS PENGENDALIAN DITULIS HANYA JIKA
+                TINGKAT RESIKO SUDAH DALAM KATEGORI LOW/ RENDAH
+            </li>
+            <li>
+                PADA UNIT INDUK UNTUK KOLOM PERSAETUJUAN DITANDATANGANI OLEH DEPUTI
+                MANAGER DAN PEJABAT PENGENDALI K3L
+            </li>
+            <li>
+                PADA SUB UNIT PELAKSANA UNTUK KOLOM PERSETUJUAN DITANDATANGANI OLEH
+                MANAGER SUB UNIT PELAKSANA
+            </li>
+        </ol>
+    </div>
+    <div class="headerImage">
+        <img src="{{baseurl}}views/footer.jpeg" alt="tes">
+    </div>
+</body>
+
+</html>

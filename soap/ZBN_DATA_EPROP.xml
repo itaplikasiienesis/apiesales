@@ -1,0 +1,8 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:soap:functions:mc-style">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:ZfmWsEprop>
+        #
+      </urn:ZfmWsEprop>
+   </soapenv:Body>
+</soapenv:Envelope>

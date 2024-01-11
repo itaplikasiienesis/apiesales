@@ -1,0 +1,53 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:rfc:functions">
+   <soap:Header/>
+   <soap:Body>
+      <urn:ZFM_WS_CMO>
+         <ITAB>
+            <!--Zero or more repetitions:-->
+            <item>
+              <MANDT></MANDT>
+               <BSTKD>C90950892</BSTKD>
+               <AUART>ZCC1</AUART>
+               <VTWEG>20</VTWEG>
+               <SPART>00</SPART>
+               <KUNNR>1000003</KUNNR>
+               <KUNSH>6000006</KUNSH>
+               <GUEBG>20200201</GUEBG>
+               <GUEEN>20200229</GUEEN>
+               <MATNR>1000005</MATNR>
+               <SKU>A11H</SKU>
+               <WMENG>3</WMENG>
+               <VRKME>CAR</VRKME>
+               <EDATU>20200225</EDATU>
+               <STOKA>54</STOKA>
+               <DOI>21</DOI>
+               <M1></M1>
+               <M2></M2>
+               <VBELN></VBELN>
+            </item>
+            <item>
+              <MANDT></MANDT>
+               <BSTKD>C90950892</BSTKD>
+               <AUART>ZCC1</AUART>
+               <VTWEG>20</VTWEG>
+               <SPART>00</SPART>
+               <KUNNR>1000003</KUNNR>
+               <KUNSH>6000006</KUNSH>
+               <GUEBG>20200201</GUEBG>
+               <GUEEN>20200229</GUEEN>
+               <MATNR>1000006</MATNR>
+               <SKU>A11HA</SKU>
+               <WMENG>3</WMENG>
+               <VRKME>CAR</VRKME>
+               <EDATU>20200225</EDATU>
+               <STOKA>54</STOKA>
+               <DOI>21</DOI>
+               <M1></M1>
+               <M2></M2>
+               <VBELN></VBELN>
+            </item>
+         </ITAB>
+      </urn:ZFM_WS_CMO>
+   </soap:Body>
+</soap:Envelope>
+

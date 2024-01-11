@@ -1,0 +1,48 @@
+<html>
+    <body>
+        <div style="width: auto; background-color: #006e2e; padding: 20px; border-radius: 10px;">
+               <b>@subject@</b>
+                <br>
+                <br>
+                <table>
+                    <tr>
+                        <td>Nama File</td>
+                        <td>:</td>
+                        <td>@filename@</td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal</td>
+                        <td>:</td>
+                        <td>@tanggal@</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><b>*Jumlah SKU yang berhasil di replacement Quantity*</b></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <table border = 1>
+                                <tr>
+                                    <td>Nomor</td>
+                                    <td>SKU</td>
+                                    <td>Harga Gross</td>
+                                    <td>Harga Nett</td>
+                                    <td>Total Order Gross</td>
+                                    <td>Total Order Nett</td>
+                                    <td>Quantity Awal</td>
+                                    <td>Quantity Perubahan</td>
+                                </tr>
+                                @details@
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><b>*Template Lulus Validasi*</b></td>
+                        <td colspan="3"><b>*replacement Quantity Sukses*</b></td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <a style="color: red;" href="http://esales.enesis.com/signin"  target="_blank">Klik Untuk Login</a>
+        </div>
+    </body>
+</html>

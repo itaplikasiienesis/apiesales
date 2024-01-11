@@ -1,0 +1,8 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:rfc:functions">
+   <soapenv:Header/>
+   <soapenv:Body>
+        <urn:ZFM_WS_NPWP>
+            <PARTNER>?</PARTNER>
+        </urn:ZFM_WS_NPWP>
+   </soapenv:Body>
+</soapenv:Envelope>

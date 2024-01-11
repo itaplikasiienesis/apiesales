@@ -1,0 +1,7 @@
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+   <Body>
+      <getOrgId xmlns="http://api.hrbase.sps.com">
+         <company_id>?</company_id>
+      </getOrgId>
+   </Body>
+</Envelope>

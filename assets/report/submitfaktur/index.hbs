@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cetakan Faktur</title>
+    <link rel="stylesheet" href="{{baseurl}}\index.css">
+</head>
+
+<body>
+
+    <div class="form-report">
+        <div class="main_title_wrapper">
+            <div class="main_head">
+                <h2>INVOICING TRANSPORTER</h2>
+            </div>
+        </div>
+        <div class="main_logo_wrapper">
+            <div class="company_logo">
+                <img src="{{logoo}}" alt="logo">
+            </div>
+            <div class="company_logo_text">
+                <p>PT. MARKETAMA INDAH</p>
+                <p>Jl. Rawa Sumur III Blok DD No. 13</p>
+                <p>PULO GADUNG - JAKARTA - INDONESIA 13930</p>
+                <p>Up : Bapak Joseph Barus</p>
+                <p>Telp : +62 2 1 4609482</p>
+                <p>Fax : 62 21 4600320 </p>
+            </div>
+        </div>
+        <div class="unit_title_wrapper">
+            <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Nomor Document</td>
+                            <td>:</td>
+                            <td>{{documentno}}</td>
+                        </tr>
+                        <tr>
+                            <td>Transporter</td>
+                            <td>:</td>
+                            <td>{{nama}}</td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal Pengajuan</td>
+                            <td>:</td>
+                            <td>{{tanggal_invoice}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="container-content">
+            <div class="input-checkbox">
+                <input type="checkbox">
+                <span>Kwitansi</span>
+            </div>
+            <div class="input-checkbox">
+                <input type="checkbox">
+                <span>Invoice</span>
+            </div>
+            <div class="input-checkbox">
+                <input type="checkbox">
+                <span>Faktur Pajak</span>
+            </div>
+            <div class="input-checkbox">
+                <input type="checkbox">
+                <span>NPB / DO</span>
+            </div>
+            <div class="input-checkbox">
+                <input type="checkbox" {{bast}}>
+                <span>Berita Acara</span>
+            </div>
+            <div class="input-checkbox">
+                <input type="checkbox">
+                <span>Form Kubikasi</span>
+            </div>
+        </div>
+
+             <br />
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 col-sm-12">
+                                
+                                    <table class="table-bordered" border=1 cellspacing="-1" cellpadding="2" width="100%">
+                                        <tr>
+                                            <td colspan="10" style="background-color: black" >  
+                                                <span style="color: white"> Budget </span>
+                                            </td>
+                                        </tr>
+                                        <tr class="sansserif">
+                                            <th> No </th>
+                                            <th> Bundle / Console </th>
+                                            <th> Kode Kendaraan </th>
+                                            <th> Jenis Kendaraan </th>
+                                            <th> Tanggal POD </th>
+                                            <th> No. PO  </th>
+                                            <th> No. GR </th>
+                                            <th> Cost Shipment </th>
+                                            <th> Additional Cost </th>
+                                            <th> Total Cost </th>
+                                        </tr>
+                                        {{!-- {{tabledetail}} --}}
+                                    </table>
+                            </div>
+                        </div>
+                    </div>
+        <br />
+        <div class="unit_title_wrapper">
+            <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Pengajuan</td>
+                            <td>:</td>
+                            <td>{{tanggal_invoice}}</td>
+                        </tr>
+                        <tr>
+                            <td>Logistik</td>
+                            <td>:</td>
+                            <td>{{date_approve_logistik}}</td>
+                        </tr>
+                        <tr>
+                            <td>Logistik Head</td>
+                            <td>:</td>
+                            <td>{{date_approve_logistik_head}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
